@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/sample_answers/preliminary_page.dart';
 import 'pages/preliminary_page.dart';
 
 void main() {
@@ -15,7 +16,8 @@ class PracticeApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // ここで最初に表示する画面を変更
-      home: const PreliminaryPage(),
+      // home: const PreliminaryPage(),
+      home: const AnswerPreliminaryPage(),
     );
   }
 }
