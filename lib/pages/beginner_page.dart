@@ -8,6 +8,21 @@ class BeginnerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ここを実装
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Flutter Practice',
+        ),
+      ),
+
+      /*body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(height: 15),
+            const Text("Hello!"),
+          ],
+        ),
+      ),*/
+    );
   }
 }
