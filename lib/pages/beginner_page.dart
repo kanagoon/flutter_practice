@@ -11,7 +11,7 @@ class BeginnerPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Flutter Practice',
+          'Flutter Practice!',
         ),
       ),
 
