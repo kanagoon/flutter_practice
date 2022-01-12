@@ -11,18 +11,27 @@ class BeginnerPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Flutter Practice!',
+          'Flutter Practice',
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () {
+              // Pressed Action
+            },
+          ),
+        ],
       ),
 
-      /*body: SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 15),
-            const Text("Hello!"),
+            const Text(
+              "Hello!",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48),),
           ],
         ),
-      ),*/
+      ),
     );
   }
 }
