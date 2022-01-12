@@ -28,6 +28,7 @@ class BeginnerPage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Container(
+                alignment: Alignment.centerLeft,
                 padding: EdgeInsets.symmetric(
                   vertical: 20.0,
                   horizontal: 10.0,),
@@ -53,7 +54,8 @@ class BeginnerPage extends StatelessWidget {
                 color: Colors.lightBlueAccent,
                 margin: EdgeInsets.symmetric(
                   vertical: 20.0,
-                  horizontal: 10.0,),
+                  horizontal: 10.0,
+                ),
                 padding: EdgeInsets.only(top: 30),
                 width: 400,
                 alignment: Alignment.center,
@@ -68,15 +70,15 @@ class BeginnerPage extends StatelessWidget {
                       WidgetSpan(
                         child: Icon(Icons.directions_walk, color: Colors.white),
                       ),
-                      TextSpan(text: 'ウォーキング          25分\n\n'),
+                      TextSpan(text: 'ウォーキング                  25分\n\n'),
                       WidgetSpan(
                         child: Icon(Icons.directions_run, color: Colors.white),
                       ),
-                      TextSpan(text: 'ランニング              10分\n\n'),
+                      TextSpan(text: 'ランニング                      10分\n\n'),
                       WidgetSpan(
                         child: Icon(Icons.fitness_center, color: Colors.white),
                       ),
-                      TextSpan(text: 'トレーニング          45分\n\n'),
+                      TextSpan(text: 'トレーニング                  45分\n\n'),
                     ],
                   ),
                 ),
@@ -97,18 +99,15 @@ class BeginnerPage extends StatelessWidget {
                     style: TextStyle(color: Colors.white, fontSize: 18),
                     children: [
                       TextSpan(
-                        text: 'データ\n\n',
+                        text: '                       データ\n\n',
                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                       ),
-                      TextSpan(text: 'ウォーキング          25分\n\n'),
-                      WidgetSpan(
-                        child: Icon(Icons.directions_run, color: Colors.white),
+                      TextSpan(text: '         歩数           平均心拍数      消費カロリー\n\n'),
+                      TextSpan(
+                        text: '   5,210       68         256\n\n',
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                       ),
-                      TextSpan(text: 'ランニング              10分\n\n'),
-                      WidgetSpan(
-                        child: Icon(Icons.fitness_center, color: Colors.white),
-                      ),
-                      TextSpan(text: 'トレーニング          45分\n\n'),
+                      TextSpan(text: '           歩                    BPM                 Kcal\n\n'),
                     ],
                   ),
                 ),
