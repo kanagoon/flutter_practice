@@ -15,7 +15,7 @@ class PracticeApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      debugShowCheckedModeBanner: false,
+      //debugShowCheckedModeBanner: false,
       // ここで最初に表示する画面を変更
       home: const BeginnerPage(),
     );

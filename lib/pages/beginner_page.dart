@@ -31,10 +31,14 @@ class BeginnerPage extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 padding: EdgeInsets.symmetric(
                   vertical: 20.0,
-                  horizontal: 10.0,),
+                  horizontal: 10.0,
+                ),
                 child: const Text(
                   "Hello!",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48, color: Colors.black),
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 42,
+                      color: Colors.black),
                   textAlign: TextAlign.left,
                 ),
               ),
@@ -44,7 +48,7 @@ class BeginnerPage extends StatelessWidget {
                 label: Text('運動を開始する'),
                 style: ElevatedButton.styleFrom(
                   textStyle: TextStyle(
-                    fontSize: 10,
+                    fontSize: 16,
                   ),
                   onPrimary: Colors.white,
                   primary: Colors.lightGreen, //ボタンの背景色
@@ -57,15 +61,18 @@ class BeginnerPage extends StatelessWidget {
                   horizontal: 10.0,
                 ),
                 padding: EdgeInsets.only(top: 30),
-                width: 400,
+                width: 300,
                 alignment: Alignment.center,
                 child: RichText(
+                  textAlign: TextAlign.center,
                   text: TextSpan(
                     style: TextStyle(color: Colors.white, fontSize: 18),
                     children: [
                       TextSpan(
                         text: '本日のアクティビティ\n\n',
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20
+                        ),
                       ),
                       WidgetSpan(
                         child: Icon(Icons.directions_walk, color: Colors.white),
@@ -90,24 +97,31 @@ class BeginnerPage extends StatelessWidget {
                 ),
                 margin: EdgeInsets.symmetric(
                   vertical: 20.0,
-                  horizontal: 10.0,),
+                  horizontal: 10.0,
+                ),
                 padding: EdgeInsets.only(top: 30),
-                width: 400,
+                width: 300,
                 alignment: Alignment.center,
                 child: RichText(
+                  textAlign: TextAlign.center,
                   text: TextSpan(
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+                    style: TextStyle(color: Colors.white, fontSize: 12),
                     children: [
                       TextSpan(
-                        text: '                       データ\n\n',
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                        text: 'データ\n\n',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
                       ),
-                      TextSpan(text: '         歩数           平均心拍数      消費カロリー\n\n'),
                       TextSpan(
-                        text: '   5,210       68         256\n\n',
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                          text: '      歩数                平均心拍数        消費カロリー\n\n'),
+                      TextSpan(
+                        text: '5,210           68            256\n',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
                       ),
-                      TextSpan(text: '           歩                    BPM                 Kcal\n\n'),
+                      TextSpan(
+                          text:
+                              '\n歩                           BPM                     Kcal\n'),
                     ],
                   ),
                 ),
@@ -115,10 +129,9 @@ class BeginnerPage extends StatelessWidget {
               const Text(
                 "フレンドと運動の記録をシェアしよう",
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                  color: Colors.grey
-                ),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.grey),
               ),
               Container(
                 padding: EdgeInsets.symmetric(vertical: 20),
@@ -149,9 +162,7 @@ class BeginnerPage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () { },
-        child: Icon(Icons.add, color: Colors.white)
-      ),
+          onPressed: () {}, child: Icon(Icons.add, color: Colors.white)),
     );
   }
 }
