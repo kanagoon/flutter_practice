@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/sample_answers/beginner_page.dart';
 import 'package:flutter_practice/sample_answers/preliminary_page.dart';
 import 'pages/beginner_page.dart';
 
@@ -17,7 +18,8 @@ class PracticeApp extends StatelessWidget {
       ),
       //debugShowCheckedModeBanner: false,
       // ここで最初に表示する画面を変更
-      home: const BeginnerPage(),
+      home: const AnswerBeginnerPage(),
+      // home: const BeginnerPage(),
     );
   }
 }
